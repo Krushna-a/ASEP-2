@@ -69,9 +69,9 @@ const Navbar = () => {
             aria-label="Search"
           >
             {search ? (
-                <FontAwesomeIcon icon={faXmark} />
+              <FontAwesomeIcon icon={faXmark} />
             ) : (
-                <FontAwesomeIcon icon={faMagnifyingGlass} />
+              <FontAwesomeIcon icon={faMagnifyingGlass} />
             )}
           </button>
 
@@ -125,7 +125,7 @@ const Navbar = () => {
 
         {/* Sidebar Nav Links */}
         <div className="flex flex-col items-start px-6 gap-4 text-lg font-medium mt-6">
-          {["/", "/collection", "/about", "/contact"].map((route, i) => (
+          {["/", "/page1", "/page2", "/page3"].map((route, i) => (
             <NavLink
               key={i}
               to={route}
