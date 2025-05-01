@@ -31,9 +31,9 @@ const Home = () => {
   return (
     <div>
       <div className="w-full flex flex-col items-center my-5 gap-2">
-        <div className="mt-16 w-[80vw] flex justify-end">
+        <div className="mt-16 w-[80vw] flex justify-end relative">
           <div
-            className="py-2 px-5 border hover:opacity-10 hover:animate-pulse cursor-pointer"
+            className="py-2 px-5 border hover:opacity-10 hover:animate-pulse cursor-pointer fixed top-22 left-1/2 -translate-x-1/2 z-20"
             style={{ transition: "opacity 0.1s ease-out" }}
             onMouseEnter={() => handleHold(true)}
             onMouseLeave={() => handleHold(false)}
