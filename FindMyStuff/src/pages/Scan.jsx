@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Page3 = () => {
+const Scan = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const Page3 = () => {
   )
 }
 
-export default Page3
+export default Scan
