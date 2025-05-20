@@ -84,7 +84,7 @@ const Navbar = () => {
             { path: "/", label: "Home" },
             { path: "/my-items", label: "My Items" },
             { path: "/scan", label: "Scan Tag" },
-            { path: "/shop", label: "Get Tags" },
+            { path: "/community", label: "Community" },
             { path: "/how-it-works", label: "How It Works" }
           ].map((route, i) => (
             <NavLink
@@ -156,7 +156,10 @@ const Navbar = () => {
           </NavLink>
 
           {/* User Dropdown */}
-          <div className={`${search ? "hidden" : "block"} relative`}>
+          <NavLink to="/auth" className="hover:text-blue-600 transition">
+            <FontAwesomeIcon icon={faUser} />
+          </NavLink>
+          {/* <div className={`${search ? "hidden" : "block"} relative`}>
             <button 
               ref={userIconRef}
               onClick={toggleDropdown}
@@ -174,7 +177,7 @@ const Navbar = () => {
             >
               
               <NavLink
-                to="/login"
+                to="/auth"
                 className="px-4 py-3 hover:bg-gray-100 cursor-pointer border-b flex items-center gap-2"
               >
                 <span className="text-blue-600 text-sm">
@@ -183,7 +186,7 @@ const Navbar = () => {
                 Login
               </NavLink>
               <NavLink
-                to="/signup"
+                to="/auth"
                 className="px-4 py-3 hover:bg-gray-100 cursor-pointer border-b flex items-center gap-2"
               >
                 <span className="text-green-600 text-sm">
@@ -198,7 +201,7 @@ const Navbar = () => {
                 Logout
               </button>
             </div>
-          </div>
+          </div> */}
 
           {/* Mobile Menu Icon */}
           <div
@@ -259,7 +262,7 @@ const Navbar = () => {
             { path: "/", label: "Home" },
             { path: "/my-items", label: "My Items" },
             { path: "/scan", label: "Scan Tag" },
-            { path: "/shop", label: "Get Tags" },
+            { path: "/community", label: "Community" },
             { path: "/how-it-works", label: "How It Works" },
             { path: "/lost-items", label: "Report Lost Item" },
             { path: "/found-items", label: "Report Found Item" }
@@ -301,7 +304,7 @@ const Navbar = () => {
             <span>My Profile</span>
           </NavLink>
           <NavLink
-            to="/login"
+            to="/auth"
             className="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 border-t"
             onClick={() => setVisible(false)}
           >
