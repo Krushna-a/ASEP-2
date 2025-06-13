@@ -73,8 +73,8 @@ const Home = () => {
             </div>
           )}
           {visibleComp === 2 && (
-            <div className="transition-all duration-700 opacity-100">
-              <HomeComp3 />
+            <div className="transition-all duration-700 opacity-100 w-full">
+              <HomeComp3 onHover={handleHold} />
             </div>
           )}
           {visibleComp === 3 && (
